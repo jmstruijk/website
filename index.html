@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>J.M. Struijk · Books for ADHD, Autism &amp; AuDHD Adults</title>
-<meta name="description" content="Author of The ADHD Tax, The ADHD Reset Series, and The Autism Masking Reset. Written by an ADHD &amp; autistic adult — practical books for the brain you actually have.">
+<meta name="description" content="Author of The ADHD Tax and the ADHD Reset Series. Written by an ADHD &amp; autistic adult — practical books for the brain you actually have.">
 <meta name="author" content="J.M. Struijk">
 <link rel="canonical" href="https://jmstruijk.com/">
 
@@ -36,8 +36,6 @@
     {"@type": "Book","name": "The ADHD Overthinking Reset","author": {"@id": "https://jmstruijk.com/#person"},"publisher": {"@id": "https://jmstruijk.com/#publisher"},"isbn": "B0GDGK3RLK","url": "https://www.amazon.com/dp/B0GDGK3RLK","bookFormat": "https://schema.org/EBook","inLanguage": "en"},
     {"@type": "Book","name": "The ADHD Eating Reset","author": {"@id": "https://jmstruijk.com/#person"},"publisher": {"@id": "https://jmstruijk.com/#publisher"},"isbn": "B0GDH6R4DL","url": "https://www.amazon.com/dp/B0GDH6R4DL","bookFormat": "https://schema.org/EBook","inLanguage": "en"},
     {"@type": "Book","name": "The ADHD Decision Reset","author": {"@id": "https://jmstruijk.com/#person"},"publisher": {"@id": "https://jmstruijk.com/#publisher"},"isbn": "B0GDMWFDZ7","url": "https://www.amazon.com/dp/B0GDMWFDZ7","bookFormat": "https://schema.org/EBook","inLanguage": "en"},
-    {"@type": "Book","name": "The ADHD Burnout Recovery Guide","author": {"@id": "https://jmstruijk.com/#person"},"publisher": {"@id": "https://jmstruijk.com/#publisher"},"isbn": "B0GDLRFXQ3","url": "https://www.amazon.com/dp/B0GDLRFXQ3","bookFormat": "https://schema.org/EBook","inLanguage": "en"},
-    {"@type": "Book","name": "The Autism Masking Reset","author": {"@id": "https://jmstruijk.com/#person"},"publisher": {"@id": "https://jmstruijk.com/#publisher"},"isbn": "B0GTMMZPTY","url": "https://www.amazon.com/dp/B0GTMMZPTY","bookFormat": "https://schema.org/EBook","inLanguage": "en"}
   ]
 }
 </script>
@@ -275,7 +273,30 @@ h1 em {
   justify-content: space-between;
   color: #fff;
   transition: transform 0.3s ease;
+  overflow: hidden;
 }
+.hero-book img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.hero-book > *:not(img) {
+  position: relative;
+  z-index: 2;
+}
+.book-cover { position: relative; }
+.book-cover img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.book-cover-inner { position: absolute; inset: 0; padding: 22px 20px; display: flex; flex-direction: column; justify-content: space-between; z-index: 2; }
 .hero-book-1 {
   top: 0;
   left: 30%;
@@ -738,18 +759,21 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
 
       <div class="hero-visual">
         <a href="https://www.amazon.com/dp/B0FX3M9838" target="_blank" rel="noopener" class="hero-book hero-book-1" aria-label="The ADHD Tax on Amazon">
+          <img src="assets/covers/adhd-tax.jpg" alt="The ADHD Tax book cover">
           <div class="hb-eyebrow">Money Mastery · 01</div>
           <div class="hb-title">The ADHD Tax</div>
           <div class="hb-author">J.M. Struijk</div>
         </a>
-        <a href="https://www.amazon.com/dp/B0GDH6R4DL" target="_blank" rel="noopener" class="hero-book hero-book-2" aria-label="The ADHD Eating Reset on Amazon">
-          <div class="hb-eyebrow">Reset Series · 02</div>
-          <div class="hb-title">The ADHD Eating Reset</div>
+        <a href="https://www.amazon.com/dp/B0G2HRQTWJ" target="_blank" rel="noopener" class="hero-book hero-book-2" aria-label="The ADHD Side Hustle on Amazon">
+          <img src="assets/covers/adhd-side-hustle.jpg" alt="The ADHD Side Hustle book cover">
+          <div class="hb-eyebrow">Money Mastery · 03</div>
+          <div class="hb-title">The ADHD Side Hustle</div>
           <div class="hb-author">J.M. Struijk</div>
         </a>
-        <a href="https://www.amazon.com/dp/B0GTMMZPTY" target="_blank" rel="noopener" class="hero-book hero-book-3" aria-label="The Autism Masking Reset on Amazon">
-          <div class="hb-eyebrow">Wired Different · 01</div>
-          <div class="hb-title">The Autism Masking Reset</div>
+        <a href="https://www.amazon.com/dp/B0GDGK3RLK" target="_blank" rel="noopener" class="hero-book hero-book-3" aria-label="The ADHD Overthinking Reset on Amazon">
+          <img src="assets/covers/adhd-overthinking-reset.jpg" alt="The ADHD Overthinking Reset book cover">
+          <div class="hb-eyebrow">Reset Series · 01</div>
+          <div class="hb-title">The ADHD Overthinking Reset</div>
           <div class="hb-author">J.M. Struijk</div>
         </a>
       </div>
@@ -783,9 +807,9 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
 
     <div class="section-intro" data-reveal>
       <span class="section-tag">The Catalogue</span>
-      <h2>Three series. One <em>author.</em> One shelf.</h2>
+      <h2>Two series. One <em>author.</em> One shelf.</h2>
       <p>
-        Each book is built around a specific way ADHD or autism shows up in real adult life — money chaos, food paralysis, the 2 a.m. overthinking spiral, burnout, the cost of masking. Start anywhere. Each book stands alone; together they form one toolkit.
+        Each book is built around a specific way ADHD shows up in real adult life — money chaos, food paralysis, the 2 a.m. overthinking spiral, and decision overload. Start anywhere. Each book stands alone; together they form one toolkit.
       </p>
     </div>
 
@@ -798,6 +822,7 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
 
         <a href="https://www.amazon.com/dp/B0FX3M9838" class="book" target="_blank" rel="noopener" aria-label="The ADHD Tax on Amazon">
           <div class="book-cover cover-coral">
+            <img src="assets/covers/adhd-tax.jpg" alt="The ADHD Tax book cover">
             <div class="badge badge-start">Start here</div>
             <div class="book-cover-inner">
               <div class="book-cover-eyebrow">Money Mastery · 01</div>
@@ -814,6 +839,7 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
 
         <a href="https://www.amazon.com/dp/B0FXHLPSKJ" class="book" target="_blank" rel="noopener" aria-label="The ADHD Budget Workbook on Amazon">
           <div class="book-cover cover-ink">
+            <img src="assets/covers/adhd-budget-workbook.jpg" alt="The ADHD Budget Workbook book cover">
             <div class="badge badge-bestseller">Bestseller</div>
             <div class="book-cover-inner">
               <div class="book-cover-eyebrow">Money Mastery · 02</div>
@@ -830,6 +856,7 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
 
         <a href="https://www.amazon.com/dp/B0G2HRQTWJ" class="book" target="_blank" rel="noopener" aria-label="The ADHD Side Hustle on Amazon">
           <div class="book-cover cover-cream">
+            <img src="assets/covers/adhd-side-hustle.jpg" alt="The ADHD Side Hustle book cover">
             <div class="book-cover-inner">
               <div class="book-cover-eyebrow">Money Mastery · 03</div>
               <div><div class="book-cover-title">The ADHD Side Hustle</div></div>
@@ -855,6 +882,7 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
 
         <a href="https://www.amazon.com/dp/B0GDGK3RLK" class="book" target="_blank" rel="noopener" aria-label="The ADHD Overthinking Reset on Amazon">
           <div class="book-cover cover-slate">
+            <img src="assets/covers/adhd-overthinking-reset.jpg" alt="The ADHD Overthinking Reset book cover">
             <div class="book-cover-inner">
               <div class="book-cover-eyebrow">Reset Series · 01</div>
               <div><div class="book-cover-title">The ADHD Overthinking Reset</div></div>
@@ -870,6 +898,7 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
 
         <a href="https://www.amazon.com/dp/B0GDH6R4DL" class="book" target="_blank" rel="noopener" aria-label="The ADHD Eating Reset on Amazon">
           <div class="book-cover cover-sage">
+            <img src="assets/covers/adhd-eating-reset.jpg" alt="The ADHD Eating Reset book cover">
             <div class="book-cover-inner">
               <div class="book-cover-eyebrow">Reset Series · 02</div>
               <div><div class="book-cover-title">The ADHD Eating Reset</div></div>
@@ -885,6 +914,7 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
 
         <a href="https://www.amazon.com/dp/B0GDMWFDZ7" class="book" target="_blank" rel="noopener" aria-label="The ADHD Decision Reset on Amazon">
           <div class="book-cover cover-rust">
+            <img src="assets/covers/adhd-decision-reset.jpg" alt="The ADHD Decision Reset book cover">
             <div class="book-cover-inner">
               <div class="book-cover-eyebrow">Reset Series · 03</div>
               <div><div class="book-cover-title">The ADHD Decision Reset</div></div>
@@ -900,59 +930,6 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
 
       </div>
     </div>
-
-    <div class="series-block" id="autism" data-reveal>
-      <div class="series-header">
-        <h3 class="series-name"><span class="series-color-dot" style="background:var(--plum, #4a3548);"></span>Wired Different · Autism &amp; AuDHD</h3>
-        <span class="series-meta">Series in progress</span>
-      </div>
-      <div class="book-grid">
-
-        <a href="https://www.amazon.com/dp/B0GTMMZPTY" class="book" target="_blank" rel="noopener" aria-label="The Autism Masking Reset on Amazon">
-          <div class="book-cover cover-plum">
-            <div class="book-cover-inner">
-              <div class="book-cover-eyebrow">Wired Different · 01</div>
-              <div><div class="book-cover-title">The Autism Masking Reset</div></div>
-              <div class="book-cover-author">J.M. Struijk</div>
-            </div>
-          </div>
-          <div class="book-meta">
-            <div class="book-title">The Autism Masking Reset</div>
-            <div class="book-subtitle">Stop performing neurotypical, reclaim your energy, live as your actual self</div>
-            <div class="book-link">View on Amazon</div>
-          </div>
-        </a>
-
-      </div>
-    </div>
-
-    <div class="series-block" id="burnout" data-reveal>
-      <div class="series-header">
-        <h3 class="series-name"><span class="series-color-dot" style="background:var(--gold);"></span>Standalone</h3>
-        <span class="series-meta">1 book</span>
-      </div>
-      <div class="book-grid">
-
-        <a href="https://www.amazon.com/dp/B0GDLRFXQ3" class="book" target="_blank" rel="noopener" aria-label="The ADHD Burnout Recovery Guide on Amazon">
-          <div class="book-cover cover-gold">
-            <div class="book-cover-inner">
-              <div class="book-cover-eyebrow">ADHD · Recovery</div>
-              <div><div class="book-cover-title">The ADHD Burnout Recovery Guide</div></div>
-              <div class="book-cover-author">J.M. Struijk</div>
-            </div>
-          </div>
-          <div class="book-meta">
-            <div class="book-title">The ADHD Burnout Recovery Guide</div>
-            <div class="book-subtitle">Triage, recovery, and prevention for the brain you actually have</div>
-            <div class="book-link">View on Amazon</div>
-          </div>
-        </a>
-
-      </div>
-    </div>
-
-  </section>
-
   <!-- ABOUT -->
   <section class="about" id="about">
     <div class="about-inner">
