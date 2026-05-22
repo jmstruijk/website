@@ -489,6 +489,21 @@ h1 em {
 .book-link::after { content: '→'; transition: transform 0.2s ease; }
 .book:hover .book-link::after { transform: translateX(4px); }
 
+
+/* ---------- DOWNLOADS ---------- */
+.downloads { padding: 90px 0; }
+.downloads-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
+@media (max-width: 880px) { .downloads-grid { grid-template-columns: 1fr; gap: 32px; } }
+.download-card { padding: 32px; background: var(--cream-deep); border-radius: 4px; border: 1px solid var(--rule); }
+.download-card h3 { font-family: var(--serif); font-weight: 600; font-size: 20px; line-height: 1.2; letter-spacing: -0.015em; margin-bottom: 16px; color: var(--ink); }
+.download-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.download-list li { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--rule-strong); }
+.download-list li:last-child { border-bottom: 0; }
+.download-icon { width: 24px; height: 24px; flex-shrink: 0; color: var(--coral); }
+.download-link { font-size: 14px; color: var(--ink-soft); text-decoration: none; transition: color 0.2s ease; }
+.download-link:hover { color: var(--coral); }
+.download-size { font-size: 12px; color: var(--muted); margin-left: auto; }
+
 /* ---------- ABOUT ---------- */
 .about { padding: 90px 0; background: var(--cream-deep); margin: 0 -32px; padding-left: 32px; padding-right: 32px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
 @media (max-width: 640px) { .about { margin: 0 -20px; padding-left: 20px; padding-right: 20px; } }
@@ -720,6 +735,7 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
       <a href="#" class="nav-mark">J.M. Struijk</a>
       <div class="nav-links">
         <a href="#books">Books</a>
+        <a href="#downloads" class="nav-hide-mobile">Downloads</a>
         <a href="#about" class="nav-hide-mobile">About</a>
         <a href="#toolkit" class="nav-btn">Free toolkit</a>
       </div>
@@ -894,6 +910,105 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
 
       </div>
     </div>
+  <!-- DOWNLOADS -->
+  <section class="downloads" id="downloads">
+    <div class="container">
+      <div class="section-intro" data-reveal>
+        <span class="section-tag">Companion Materials</span>
+        <h2>Worksheets & guides for each <em>book.</em></h2>
+        <p>
+          Each book comes with printable worksheets, trackers, and reference cards designed to work with the material. Download them free — they're already yours if you bought the book.
+        </p>
+      </div>
+
+      <div class="downloads-grid" data-reveal>
+        <div class="download-card">
+          <h3>The ADHD Tax</h3>
+          <ul class="download-list">
+            <li>
+              <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <a href="#" class="download-link">Spending spiral tracker</a>
+              <span class="download-size">PDF</span>
+            </li>
+            <li>
+              <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <a href="#" class="download-link">Subscription audit worksheet</a>
+              <span class="download-size">PDF</span>
+            </li>
+            <li>
+              <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <a href="#" class="download-link">Impulse purchase recovery card</a>
+              <span class="download-size">PDF</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="download-card">
+          <h3>The ADHD Budget Workbook</h3>
+          <ul class="download-list">
+            <li>
+              <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <a href="#" class="download-link">90-day budget template</a>
+              <span class="download-size">PDF</span>
+            </li>
+            <li>
+              <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <a href="#" class="download-link">Monthly expense tracker</a>
+              <span class="download-size">PDF</span>
+            </li>
+            <li>
+              <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <a href="#" class="download-link">Debt payoff strategy worksheet</a>
+              <span class="download-size">PDF</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="download-card">
+          <h3>The ADHD Side Hustle</h3>
+          <ul class="download-list">
+            <li>
+              <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <a href="#" class="download-link">Income tracking template</a>
+              <span class="download-size">PDF</span>
+            </li>
+            <li>
+              <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <a href="#" class="download-link">Hyperfocus project planner</a>
+              <span class="download-size">PDF</span>
+            </li>
+            <li>
+              <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <a href="#" class="download-link">Burnout prevention checklist</a>
+              <span class="download-size">PDF</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="download-card">
+          <h3>The ADHD Reset Series</h3>
+          <ul class="download-list">
+            <li>
+              <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <a href="#" class="download-link">Overthinking interrupt card</a>
+              <span class="download-size">PDF</span>
+            </li>
+            <li>
+              <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <a href="#" class="download-link">Meal planning worksheet</a>
+              <span class="download-size">PDF</span>
+            </li>
+            <li>
+              <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <a href="#" class="download-link">Decision matrix template</a>
+              <span class="download-size">PDF</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ABOUT -->
   <section class="about" id="about">
     <div class="about-inner">
